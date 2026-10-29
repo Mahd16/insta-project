@@ -31,6 +31,40 @@ document.querySelector('.posts .b').addEventListener('click',(fullscreen)=>{
 document.querySelector('.posts .c').addEventListener('click',(fullscreen)=>{
     fullscreen.target.requestFullscreen()
 });
+document.querySelector('.posts .d').addEventListener('click',(fullscreen)=>{
+    fullscreen.target.requestFullscreen()
+});
+document.querySelector('.posts .e').addEventListener('click',(fullscreen)=>{
+    fullscreen.target.requestFullscreen()
+});
+document.querySelector('.posts .f').addEventListener('click',(fullscreen)=>{
+    fullscreen.target.requestFullscreen()
+});
+document.querySelector('.posts .g').addEventListener('click',(fullscreen)=>{
+    fullscreen.target.requestFullscreen()
+});
+document.querySelector('.posts .h').addEventListener('click',(fullscreen)=>{
+    fullscreen.target.requestFullscreen()
+});
+document.querySelector('.posts .i').addEventListener('click',(fullscreen)=>{
+    fullscreen.target.requestFullscreen()
+});
+document.querySelector('.posts .j').addEventListener('click',(fullscreen)=>{
+    fullscreen.target.requestFullscreen()
+});
+document.querySelector('.posts .k').addEventListener('click',(fullscreen)=>{
+    fullscreen.target.requestFullscreen()
+});
+document.querySelector('.posts .l').addEventListener('click',(fullscreen)=>{
+    fullscreen.target.requestFullscreen()
+});
+document.querySelector('#storyfav').addEventListener('click',(fullscreen)=>{
+    fullscreen.target.requestFullscreen()
+});
+
+
+
+
 let like= document.querySelector('.footer img').previousElementSibling;
 
  like.addEventListener('dblclick',(like)=>{
@@ -38,6 +72,36 @@ let like= document.querySelector('.footer img').previousElementSibling;
 });
 
 let story = document.querySelector('#file');
+story.addEventListener('click',addstory);
+ function addstory(){
+    let s2 = document.querySelector('.s2');
+    let storyadding = s2.cloneNode(true);
+
+    document.querySelector('.highlight').appendChild(storyadding);
+ 
+    storyadding.addEventListener('contextmenu',function (e){
+    e.preventDefault();
+    storyadding.remove();
+})
+
+};
+
+/*
+let highlight = document.querySelector('.highlight');
+highlight.forEach(function(element){
+    element.addEventListener('contextmenu',function(e){
+        e.preventDefault();
+        element.remove();
+    })
+    
+}); */
+
+
+
+
+
+
+
 
 
 
